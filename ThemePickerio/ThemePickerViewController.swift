@@ -9,7 +9,7 @@ import UIKit
 
 class ThemePickerViewController: UIViewController {
 
-    var themePickerDelegate: ThemePickerDelegate?
+    var lblName: String?
     var backgroundColor: UIColor?
     
     override func viewDidLoad() {
@@ -18,26 +18,26 @@ class ThemePickerViewController: UIViewController {
     }
     
     @IBAction func pressBrocoli(_ sender: Any) {
-        themePickerDelegate?.getThemeName(name: "🥦")
-        themePickerDelegate?.getThemeColor(color: .systemGreen)
+        lblName = "🥦"
+        backgroundColor = .systemGreen
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func pressChili(_ sender: Any) {
-        themePickerDelegate?.getThemeName(name: "🌶️")
-        themePickerDelegate?.getThemeColor(color: .systemRed)
+        lblName = "🌶️"
+        backgroundColor = .systemRed
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func pressLemon(_ sender: Any) {
-        themePickerDelegate?.getThemeName(name: "🍋")
-        themePickerDelegate?.getThemeColor(color: .systemYellow)
+        lblName = "🍋"
+        backgroundColor = .systemYellow
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func pressGrape(_ sender: Any) {
-        themePickerDelegate?.getThemeName(name: "🍇")
-        themePickerDelegate?.getThemeColor(color: .systemPurple)
+        lblName = "🍇"
+        backgroundColor = .systemPurple
         dismiss(animated: true, completion: nil)
     }
     

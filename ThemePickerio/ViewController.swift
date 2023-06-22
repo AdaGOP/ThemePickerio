@@ -7,12 +7,7 @@
 
 import UIKit
 
-protocol ThemePickerDelegate {
-    func getThemeName(name: String)
-    func getThemeColor(color: UIColor)
-}
-
-class ViewController: UIViewController, ThemePickerDelegate {
+class ViewController: UIViewController {
     
     var themeName: String = "🥦"
     var themeColor: UIColor = .systemGreen
@@ -28,20 +23,11 @@ class ViewController: UIViewController, ThemePickerDelegate {
     @IBAction func pressChangeTheme(_ sender: Any) {
         let themePickerStoryboard = UIStoryboard(name: "ThemePicker", bundle: nil)
         let themePickerVC = themePickerStoryboard.instantiateViewController(withIdentifier: "ThemePickerViewController") as! ThemePickerViewController
-        themePickerVC.themePickerDelegate = self
         themePickerVC.backgroundColor = themeColor
+        themePickerVC.lblName = themeName
         present(themePickerVC, animated: true, completion: nil)
     }
-    
-    func getThemeName(name: String) {
-        themeName = name
-        lblEmoji.text = themeName
-    }
-    
-    func getThemeColor(color: UIColor) {
-        themeColor = color
-        view.backgroundColor = themeColor
-    }
+ 
     
 }
 
