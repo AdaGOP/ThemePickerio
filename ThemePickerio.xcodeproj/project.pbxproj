@@ -13,6 +13,8 @@
 		2CA8E8232A45051100AB2416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA8E8212A45051100AB2416 /* Main.storyboard */; };
 		2CA8E8252A45051200AB2416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA8E8242A45051200AB2416 /* Assets.xcassets */; };
 		2CA8E8282A45051200AB2416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA8E8262A45051200AB2416 /* LaunchScreen.storyboard */; };
+		2CA8E8302A45064A00AB2416 /* ThemePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA8E82F2A45064A00AB2416 /* ThemePicker.storyboard */; };
+		2CA8E8322A45065A00AB2416 /* ThemePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8E8312A45065A00AB2416 /* ThemePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2CA8E8242A45051200AB2416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CA8E8272A45051200AB2416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CA8E8292A45051200AB2416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA8E82F2A45064A00AB2416 /* ThemePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThemePicker.storyboard; sourceTree = "<group>"; };
+		2CA8E8312A45065A00AB2416 /* ThemePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				2CA8E81D2A45051100AB2416 /* SceneDelegate.swift */,
 				2CA8E81F2A45051100AB2416 /* ViewController.swift */,
 				2CA8E8212A45051100AB2416 /* Main.storyboard */,
+				2CA8E82F2A45064A00AB2416 /* ThemePicker.storyboard */,
+				2CA8E8312A45065A00AB2416 /* ThemePickerViewController.swift */,
 				2CA8E8242A45051200AB2416 /* Assets.xcassets */,
 				2CA8E8262A45051200AB2416 /* LaunchScreen.storyboard */,
 				2CA8E8292A45051200AB2416 /* Info.plist */,
@@ -127,6 +133,7 @@
 			files = (
 				2CA8E8282A45051200AB2416 /* LaunchScreen.storyboard in Resources */,
 				2CA8E8252A45051200AB2416 /* Assets.xcassets in Resources */,
+				2CA8E8302A45064A00AB2416 /* ThemePicker.storyboard in Resources */,
 				2CA8E8232A45051100AB2416 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				2CA8E8202A45051100AB2416 /* ViewController.swift in Sources */,
 				2CA8E81C2A45051100AB2416 /* AppDelegate.swift in Sources */,
+				2CA8E8322A45065A00AB2416 /* ThemePickerViewController.swift in Sources */,
 				2CA8E81E2A45051100AB2416 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
